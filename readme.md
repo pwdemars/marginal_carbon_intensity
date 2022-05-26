@@ -6,6 +6,10 @@ For a given state $X$, we can plot $y$ vs. $D$, the carbon intensity curve, esti
 
 ![Carbon intensity curve](https://raw.githubusercontent.com/pwdemars/marginal_carbon_intensity/main/img/example_curve.png)
 
+Then, dividing change in demand (converted to kWh) by the change in emissions (g), the marginal carbon intensity is calculated. The plot below shows the estimated marginal carbon intensity for a 1 MWh increase in demand:
+
+![Marginal carbon intensity time series](https://raw.githubusercontent.com/pwdemars/marginal_carbon_intensity/main/img/marginal_carbon_intensity.png)
+
 Underlying this model is the assumption that if we can control for changes in other power system variables, it is possible to calculate the impact that the change in load had on grid carbon intensity. In practice, this is likely to be a non-linear function of the change in load: if load increases enough to warrant an additional generator to be brought online, this may result in a step-change in the carbon intensity, whereas small changes that can be handled by ramping of committed generation can be handled by ramping committed generators. 
 
 To represent these complex dynamics, a generalised additive model (GAMs) is used here. GAMs use splines to produce a function which is a linear combination of smooth functions of predictors. GAMs are an attractive approach for this task as the results are interpretable: the marginal impact of any indepenent variable on carbon intensity can be extracted individually. Furthermore, the smoothness can be tuned, offering relatively intuitive results as compared with widely-used black-box methods. 
@@ -19,4 +23,5 @@ Overall, this methodology has the following advantages:
 
 As a top-down approach, the proposed model does not consider the complex dynamics of generator dispatch. While this is a limitation, bottom-up approaches are less generalisable across sytems due to the substantial data requirements. 
 
-Please see the notebook for a prototype of this approach for Great Britain.  
+Please see the notebook for a prototype of this approach for Great Britain.
+
