@@ -1,4 +1,4 @@
-# Proposed Methodology for Estimating Marginal Carbon Emissions Intensity 
+Estimating Marginal Carbon Emissions Intensity 
 
 This repo prototypes an approach for estimating marginal carbon emissions intensity. Please see [the notebook](https://github.com/pwdemars/marginal_carbon_intensity/blob/main/gams.ipynb) for further details.
 
