@@ -12,11 +12,7 @@ Overall, this methodology has the following advantages:
 
 - Non-linear relationships between net demand and carbon intensity are captured
 - The method requires only system-level data; no requirement for more granular data on individual generators
-- An arbitary number of relevant variables can be included in $X$ to control for 
+- An arbitary number of relevant variables can be included in $X$ to control for seasonality, fuel prices etc.
 - The impact of large and small changes in net demand $\Delta D$ can be easily calculated
 
 As a top-down approach, the proposed model does not consider the complex dynamics of generator dispatch. While this is a limitation, bottom-up approaches are less generalisable across sytems due to the substantial data requirements. 
-
-Possible improvements could be: 
-
-- To use a more accurate carbon intensity signal (i.e. that from ElectricityMap!)
