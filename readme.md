@@ -18,3 +18,5 @@ Overall, this methodology has the following advantages:
 - The impact of large and small changes in net demand $\Delta D$ can be easily calculated
 
 As a top-down approach, the proposed model does not consider the complex dynamics of generator dispatch. While this is a limitation, bottom-up approaches are less generalisable across sytems due to the substantial data requirements. 
+
+Please see the notebook for a prototype of this approach for Great Britain.  
