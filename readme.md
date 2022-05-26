@@ -1,4 +1,6 @@
-# Proposed Methodology for Estimating Marginal Carbon Intensity 
+# Proposed Methodology for Estimating Marginal Carbon Emissions Intensity 
+
+This repo prototypes an approach for estimating marginal carbon emissions intensity. Please see [the notebook](https://github.com/pwdemars/marginal_carbon_intensity/blob/main/gams.ipynb) for further details.
 
 The problem of estimating marginal carbon intensity is framed as fitting a function $y = f(D, X)$ where $y$ is the carbon intensity, $D$ represents demand net of uncontrollable renewables generation and $X$ includes exogenous variables such as time of day, renewables generation etc. representing the state of the power system. Importantly, we assume that $X$ contains variables which are to a large extent unaffected by changes in $D$. 
 
